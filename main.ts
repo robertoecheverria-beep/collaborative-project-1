@@ -208,6 +208,6 @@ let Hero = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(Hero)
 tiles.setCurrentTilemap(tilemap`level1`)
-tiles.placeOnRandomTile(Hero, sprites.builtin.forestTiles4)
+tiles.placeOnRandomTile(Hero, assets.tile`transparency16`)
 scene.cameraFollowSprite(Hero)
 info.startCountdown(60)
